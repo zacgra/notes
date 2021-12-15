@@ -22,7 +22,7 @@ init();
 
 displayName() is only available within init(), but has access to name, since it is declared in its outer scope
 
-## Closure
+## Closure Examples
 
 Compare this example to the one Nested functions
 
@@ -44,9 +44,10 @@ myFunc();
 The displayName function is returned before being executed.
 
 **How does this still work if it only exists inside the local scope?**
+
 When myFunc() is called, makeFunc() returns a reference to the displayName function. Together with the lexical environment where displayName was declared, this forms a closure. Inside of the lexical environment, name still exists.
 
-# Example 2
+### Example 2
 
 ```js
 function makeAdder(x) {
@@ -71,7 +72,7 @@ add5(2); // passes 2 to add5, 2 + 5 = 7
 
 add5 is a closure, with the add5 function and the lexical environment of 5 passed as the value for x.
 
-## Practical Example
+### Practical Example
 
 ```js
 function makeSizer(size) {

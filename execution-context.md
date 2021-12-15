@@ -21,8 +21,8 @@ The execution context manages the lexical environment that the compiler is parsi
 
 ## Phases of Execution Context
 
-1 - Tokenizing: chunks code in to tokens, ie `var, age, =, 7, ;`
-2 - Parsing: converts tokens in to AST (abstract syntax tree) of nested elements for interpretation by language's grammar
-3 - Byte Code: converts AST in to executable byte-code to be optimized by compiler
+1. Tokenizing: chunks code in to tokens, ie `var, age, =, 7, ;`
+2. Parsing: converts tokens in to AST (abstract syntax tree) of nested elements for interpretation by language's grammar
+3. Byte Code: converts AST in to executable byte-code to be optimized by compiler
 
 > AST: https://jotadeveloper.medium.com/abstract-syntax-trees-on-javascript-534e33361fc7
