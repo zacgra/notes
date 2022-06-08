@@ -1,0 +1,9 @@
+# Utilities
+
+## curl
+
+Download file to my.file silently
+
+```console
+$ curl http://example.com -o my.file -s
+```
